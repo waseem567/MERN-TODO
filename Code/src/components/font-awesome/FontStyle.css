@@ -1,0 +1,78 @@
+section i {
+    color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    padding: 0 6px;
+    user-select: none;
+    cursor: default;
+}
+section .row{
+    top: -50%;
+}
+section .row div{
+    font-size: 1em;
+    white-space: nowrap;
+    animation: animate 80s linear infinite;
+    animation-delay: -80s;
+}
+section .row div:nth-child(2){
+    font-size: 1em;
+    white-space: nowrap;
+    animation: animate2 80s linear infinite;
+    animation-delay: -40s;
+}
+@keyframes animate {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes animate2 {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+section i:hover {
+    transition: 0s;
+    color: #0f0;
+    text-shadow: 0 0 120px #0f0;
+}
+
+
+section .row:nth-child(even) div{
+    font-size: 1em;
+    white-space: nowrap;
+    animation: animate3 80s linear infinite;
+    animation-delay: -80s;
+}
+section .row:nth-child(even) div:nth-child(2){
+    font-size: 1em;
+    white-space: nowrap;
+    animation: animate4 80s linear infinite;
+    animation-delay: -40s;
+}
+@keyframes animate3 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes animate4 {
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+section i:hover {
+    transition: 0s;
+    color: #0f0;
+    text-shadow: 0 0 120px #0f0;
+}
